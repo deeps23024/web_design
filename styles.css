@@ -1,0 +1,200 @@
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background-color: #000; /* Black background color */
+}
+
+.navbar-toggler-icon {
+    background-color: #fff; /* Set background color to white */
+    margin-left: 70%;
+}
+
+/* Home section styles */
+#home {
+    background-image: url('bg.jpeg');
+    background-size: cover;
+    background-position:right;
+    padding: 160px; /* Add padding to the home section */
+}
+
+.css-typing p {
+    text-align: center;
+    border-right: .15em solid white;
+    font-family: "Courier";
+    font-size: 70px; /* Increased font size */
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.css-typing p:nth-child(1) {
+    width: 4em;
+    animation: type 2.5s steps(40, end), blink .9s step-end infinite alternate;
+    animation-fill-mode: forwards;
+}
+
+.css-typing p:nth-child(2) {
+    width: 6em;
+    opacity: 0;
+    animation: type2 4.5s steps(40, end), blink .5s step-end infinite alternate;;
+    animation-delay: 2.5s;
+    animation-fill-mode: forwards;
+}
+
+.css-typing p:nth-child(3) {
+    width: 9em;
+    opacity: 0;
+    animation: type3 5s steps(20, end), blink .5s step-end infinite alternate;
+    animation-delay: 7s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes type {
+    0% {
+        width: 0;
+    }
+    99.9% {
+        border-right: .15em solid white;
+    }
+    100% {
+        border: none;
+    }
+}
+
+@keyframes type2 {
+    0% {
+        width: 0;
+    }
+    1% {
+        opacity: 1;
+    }
+    99.9% {
+        border-right: .15em solid white;
+    }
+    100% {
+        opacity: 1;
+        border: none;
+    }
+}
+
+@keyframes type3 {
+    0% {
+        width: 0;
+    }
+    1% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: transparent !important;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.navbar-nav {
+    padding-right: 100px; /* Add padding to the right side of navbar */
+    padding-top: 20px;
+}
+
+.navbar-nav .nav-link {
+    color: white !important;
+    font-size: 24px; /* Increase font size */
+    padding: 0 50px; /* Add horizontal padding to navbar items */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffffff; /* Change color to shining white */
+    text-shadow: 0px 0px 10px #ffffff; /* Add shining effect */
+    font-size: 29px;
+}
+
+.nav-link {
+    margin-right: 30px;
+}
+
+
+/* About section styles */
+#about h2 {
+    color: #fff; /* Set text color to white */
+    margin-top: 50px; /* Add margin to the top of the heading */
+}
+
+#about p {
+    color: #fff; /* Set text color to white */
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+#about h1 {
+    font-size: 70px;
+    font-weight: bolder;
+}
+
+
+/* Contact section styles */
+#footer {
+    text-align: center;
+    border: 2px solid #fff; /* Add border to the footer */
+    border-radius: 30px; /* Add border radius */
+    padding: 20px; /* Add padding */
+}
+
+.card {
+    background-color: transparent; /* Transparent background color */
+    border: none; /* Remove default border */
+    border-radius: 30px; /* Add border radius */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow effect */
+}
+
+.card-body {
+    background-color: transparent; /* Transparent background color */
+}
+
+.card-body h2 {
+    color: #fff; /* White text color */
+}
+
+.card-body p {
+    color: #fff; /* White text color */
+}
+
+.card-body input[type="text"],
+.card-body input[type="email"],
+.card-body textarea {
+    background-color: rgba(255, 255, 255, 0.1); /* White background color with opacity */
+    border-color: #fff; /* White border color */
+    color: #fff; /* White text color */
+}
+
+.card-body input[type="text"]::placeholder,
+.card-body input[type="email"]::placeholder,
+.card-body textarea::placeholder {
+    color: rgba(255, 255, 255, 0.5); /* Placeholder text color with opacity */
+}
+
+.card-body .btn-primary {
+    background-color: transparent; /* Transparent background color */
+    border-color: #fff; /* White border color */
+    color: #fff; /* White text color */
+    border-radius: 20px; /* Add border radius to the button */
+    width: 200px;
+    transition: background-color 0.3s, border-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+.card-body .btn-primary:hover {
+    background-color: #fff; /* White background color on hover */
+    border-color: #fff; /* White border color on hover */
+    color: #000; /* Black text color on hover */
+}
